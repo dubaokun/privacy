@@ -31,6 +31,7 @@
 - 公众号：秃顶的码农
 
 个人公众号链接：
+
 ![avatar](https://github.com/dubaokun/privacy/blob/main/dbk_%E5%85%AC%E4%BC%97%E5%8F%B7.jpg）
 
 # 自我介绍
