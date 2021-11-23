@@ -32,7 +32,7 @@
 
 个人公众号链接：
 
-![avatar](https://github.com/dubaokun/privacy/blob/main/dbk_%E5%85%AC%E4%BC%97%E5%8F%B7.jpg）
+![avatar](./dbk_公众号.jpg）
 
 # 自我介绍
 >个人介绍：杜宝坤，隐私计算行业从业者，从0到1带领团队构建了京东的联邦学习解决方案9N-FL，同时主导了联邦学习框架与联邦开门红业务。
