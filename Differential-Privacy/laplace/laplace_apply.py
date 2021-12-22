@@ -9,12 +9,12 @@ def laplace_noisy(sensitivety,epsilon):
 def laplace_noisy2(sensitivety, epsilon):
     b = sensitivety/epsilon
     u1 = np.random.random()         # Return random floats in the half-open interval [0.0, 1.0).
-    u2 = np.random.random()         # Return random floats in the half-open interval [0.0, 1.0).
+    # u2 = np.random.random()         # Return random floats in the half-open interval [0.0, 1.0).
     # print("u1 = %.16f and u2 = %.16f" % (u1, u2))
     if u1 <= 0.5:
-        noisy = -b*np.log(1.-u2)
+        noisy = -b*np.log(1.-u1)
     else:
-        noisy = b*np.log(u2)
+        noisy = b*np.log(u1)
     return noisy
 
 def laplace_noisy3(x,beta):
@@ -37,3 +37,4 @@ if __name__ =='__main__':
       data_noisy = laplace_mech(data, sensitivety, epsilon)
       for j in data_noisy:
           print("Final Resulet = %.16f" % j)
+      break
