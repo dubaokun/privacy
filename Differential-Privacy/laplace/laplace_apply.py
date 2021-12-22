@@ -10,7 +10,7 @@ def laplace_noisy2(sensitivety, epsilon):
     b = sensitivety/epsilon
     u1 = np.random.random()         # Return random floats in the half-open interval [0.0, 1.0).
     u2 = np.random.random()         # Return random floats in the half-open interval [0.0, 1.0).
-    print("u1 = %.16f and u2 = %.16f" % (u1, u2))
+    # print("u1 = %.16f and u2 = %.16f" % (u1, u2))
     if u1 <= 0.5:
         noisy = -b*np.log(1.-u2)
     else:
@@ -30,9 +30,10 @@ def laplace_mech(data, sensitivety, epsilon):
  
 # 基于拉普拉斯分布的特性，如果想要分布震荡较小，需要将隐私预算epsilon的值设置较大
 if __name__ =='__main__':
-    data = [1.,2.,3.]
-    sensitivety = 1
-    epsilon = 100
-    data_noisy = laplace_mech(data, sensitivety, epsilon)
-    for j in data_noisy:
-        print("Final Resulet = %.16f" % j)
+    while(True):
+      data = [1.,2.,3.]
+      sensitivety = 1
+      epsilon = 100
+      data_noisy = laplace_mech(data, sensitivety, epsilon)
+      for j in data_noisy:
+          print("Final Resulet = %.16f" % j)
