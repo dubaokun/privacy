@@ -8,8 +8,9 @@ def laplace_noisy(sensitivety,epsilon):
 # 基于laplace的分布函数的反函数计算
 def laplace_noisy2(sensitivety, epsilon):
     b = sensitivety/epsilon
-    u1 = np.random.random()
-    u2 = np.random.random()
+    u1 = np.random.random()         # Return random floats in the half-open interval [0.0, 1.0).
+    u2 = np.random.random()         # Return random floats in the half-open interval [0.0, 1.0).
+    print("u1 = %.16f and u2 = %.16f" % (u1, u2))
     if u1 <= 0.5:
         noisy = -b*np.log(1.-u2)
     else:
